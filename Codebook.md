@@ -57,20 +57,20 @@ walking downstairs, sitting, standing, and laying while wearing a smartphone on 
 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually" (UC Irvine Human Activity Recognition Webpage 2015). Then, the
 following happened:
 
-	"The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 
-	readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration 
-	and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of 
-	features was obtained by calculating variables from the time and frequency domain" (UC Irvine Human Activity Recognition Webpage 2015).
+"The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 
+readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration 
+and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of 
+features was obtained by calculating variables from the time and frequency domain" (UC Irvine Human Activity Recognition Webpage 2015).
 
 From here, the researcheres selected features from this database that came from:
 
-	"...the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
-	Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal 
-	was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
-	Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these 
-	three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally, a Fast Fourier 
-	Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to 
-	indicate frequency domain signals)" (Accellerometer Smartphone Dataset Features Description File 2015).
+"...the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal 
+was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these 
+three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally, a Fast Fourier 
+Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to 
+indicate frequency domain signals)" (Accellerometer Smartphone Dataset Features Description File 2015).
 
 From here, each of these variables had a mean measurement (denoted by -Mean()), with many also having a standard deviation measurement (denoted by -std()). For more information about
 the data generating process for this dataset, please refer to the Accelerometer Smartphone Dataset Features Description File (2015) and the UC Irvine Human Activity Recognition
@@ -95,29 +95,29 @@ These are the means for the varying quantities that are measured in the dataset 
 Features Description  File (2015) and the UC Irvine Human Activity Recognition Webpage (2015) referenced at the end of this document for more specified information about how each were
 measured. Below are the mean variable names in this dataset:
 
- [3] "tBodyAcc-mean()-X"               "tBodyAcc-mean()-Y"              
- [5] "tBodyAcc-mean()-Z"               "tGravityAcc-mean()-X"           
- [7] "tGravityAcc-mean()-Y"            "tGravityAcc-mean()-Z"           
- [9] "tBodyAccJerk-mean()-X"           "tBodyAccJerk-mean()-Y"          
-[11] "tBodyAccJerk-mean()-Z"           "tBodyGyro-mean()-X"             
-[13] "tBodyGyro-mean()-Y"              "tBodyGyro-mean()-Z"             
-[15] "tBodyGyroJerk-mean()-X"          "tBodyGyroJerk-mean()-Y"         
-[17] "tBodyGyroJerk-mean()-Z"          "tBodyAccMag-mean()"             
-[19] "tGravityAccMag-mean()"           "tBodyAccJerkMag-mean()"         
-[21] "tBodyGyroMag-mean()"             "tBodyGyroJerkMag-mean()"        
-[23] "fBodyAcc-mean()-X"               "fBodyAcc-mean()-Y"              
-[25] "fBodyAcc-mean()-Z"               "fBodyAcc-meanFreq()-X"          
-[27] "fBodyAcc-meanFreq()-Y"           "fBodyAcc-meanFreq()-Z"          
-[29] "fBodyAccJerk-mean()-X"           "fBodyAccJerk-mean()-Y"          
-[31] "fBodyAccJerk-mean()-Z"           "fBodyAccJerk-meanFreq()-X"      
-[33] "fBodyAccJerk-meanFreq()-Y"       "fBodyAccJerk-meanFreq()-Z"      
-[35] "fBodyGyro-mean()-X"              "fBodyGyro-mean()-Y"             
-[37] "fBodyGyro-mean()-Z"              "fBodyGyro-meanFreq()-X"         
-[39] "fBodyGyro-meanFreq()-Y"          "fBodyGyro-meanFreq()-Z"         
-[41] "fBodyAccMag-mean()"              "fBodyAccMag-meanFreq()"         
-[43] "fBodyBodyAccJerkMag-mean()"      "fBodyBodyAccJerkMag-meanFreq()" 
-[45] "fBodyBodyGyroMag-mean()"         "fBodyBodyGyroMag-meanFreq()"    
-[47] "fBodyBodyGyroJerkMag-mean()"     "fBodyBodyGyroJerkMag-meanFreq()"
+ [3] "tBodyAcc-mean()-X"		"tBodyAcc-mean()-Y"              
+ [5] "tBodyAcc-mean()-Z"		"tGravityAcc-mean()-X"           
+ [7] "tGravityAcc-mean()-Y"		"tGravityAcc-mean()-Z"           
+ [9] "tBodyAccJerk-mean()-X"		"tBodyAccJerk-mean()-Y"          
+[11] "tBodyAccJerk-mean()-Z"		"tBodyGyro-mean()-X"             
+[13] "tBodyGyro-mean()-Y"		"tBodyGyro-mean()-Z"             
+[15] "tBodyGyroJerk-mean()-X"		"tBodyGyroJerk-mean()-Y"         
+[17] "tBodyGyroJerk-mean()-Z"		"tBodyAccMag-mean()"             
+[19] "tGravityAccMag-mean()"		"tBodyAccJerkMag-mean()"         
+[21] "tBodyGyroMag-mean()"		"tBodyGyroJerkMag-mean()"        
+[23] "fBodyAcc-mean()-X"		"fBodyAcc-mean()-Y"              
+[25] "fBodyAcc-mean()-Z"		"fBodyAcc-meanFreq()-X"          
+[27] "fBodyAcc-meanFreq()-Y"		"fBodyAcc-meanFreq()-Z"          
+[29] "fBodyAccJerk-mean()-X"		"fBodyAccJerk-mean()-Y"          
+[31] "fBodyAccJerk-mean()-Z"		"fBodyAccJerk-meanFreq()-X"      
+[33] "fBodyAccJerk-meanFreq()-Y"	"fBodyAccJerk-meanFreq()-Z"      
+[35] "fBodyGyro-mean()-X"		"fBodyGyro-mean()-Y"             
+[37] "fBodyGyro-mean()-Z"		"fBodyGyro-meanFreq()-X"         
+[39] "fBodyGyro-meanFreq()-Y"		"fBodyGyro-meanFreq()-Z"         
+[41] "fBodyAccMag-mean()"		"fBodyAccMag-meanFreq()"         
+[43] "fBodyBodyAccJerkMag-mean()"	"fBodyBodyAccJerkMag-meanFreq()" 
+[45] "fBodyBodyGyroMag-mean()"		"fBodyBodyGyroMag-meanFreq()"    
+[47] "fBodyBodyGyroJerkMag-mean()"	"fBodyBodyGyroJerkMag-meanFreq()"
 
 
 ## Variables 49 through 81: Means of Standard Deviations for Varying Quantities in the Dataset.
@@ -125,22 +125,22 @@ measured. Below are the mean variable names in this dataset:
 These are the standard deviations for the varying quantities that are measured in the dataset by subject and activity. Since these are standard deviations of varying quantities in the
 original dataset, there is no easily relatable measurement system that can be applied here. Below are the mean of the standard deviation variable names in this dataset:
 
-[49] "tBodyAcc-std()-X"                "tBodyAcc-std()-Y"               
-[51] "tBodyAcc-std()-Z"                "tGravityAcc-std()-X"            
-[53] "tGravityAcc-std()-Y"             "tGravityAcc-std()-Z"            
-[55] "tBodyAccJerk-std()-X"            "tBodyAccJerk-std()-Y"           
-[57] "tBodyAccJerk-std()-Z"            "tBodyGyro-std()-X"              
-[59] "tBodyGyro-std()-Y"               "tBodyGyro-std()-Z"              
-[61] "tBodyGyroJerk-std()-X"           "tBodyGyroJerk-std()-Y"          
-[63] "tBodyGyroJerk-std()-Z"           "tBodyAccMag-std()"              
-[65] "tGravityAccMag-std()"            "tBodyAccJerkMag-std()"          
-[67] "tBodyGyroMag-std()"              "tBodyGyroJerkMag-std()"         
-[69] "fBodyAcc-std()-X"                "fBodyAcc-std()-Y"               
-[71] "fBodyAcc-std()-Z"                "fBodyAccJerk-std()-X"           
-[73] "fBodyAccJerk-std()-Y"            "fBodyAccJerk-std()-Z"           
-[75] "fBodyGyro-std()-X"               "fBodyGyro-std()-Y"              
-[77] "fBodyGyro-std()-Z"               "fBodyAccMag-std()"              
-[79] "fBodyBodyAccJerkMag-std()"       "fBodyBodyGyroMag-std()"         
+[49] "tBodyAcc-std()-X"			"tBodyAcc-std()-Y"               
+[51] "tBodyAcc-std()-Z"			"tGravityAcc-std()-X"            
+[53] "tGravityAcc-std()-Y"		"tGravityAcc-std()-Z"            
+[55] "tBodyAccJerk-std()-X"		"tBodyAccJerk-std()-Y"           
+[57] "tBodyAccJerk-std()-Z"		"tBodyGyro-std()-X"              
+[59] "tBodyGyro-std()-Y"		"tBodyGyro-std()-Z"              
+[61] "tBodyGyroJerk-std()-X"		"tBodyGyroJerk-std()-Y"          
+[63] "tBodyGyroJerk-std()-Z"		"tBodyAccMag-std()"              
+[65] "tGravityAccMag-std()"		"tBodyAccJerkMag-std()"          
+[67] "tBodyGyroMag-std()"		"tBodyGyroJerkMag-std()"         
+[69] "fBodyAcc-std()-X"			"fBodyAcc-std()-Y"               
+[71] "fBodyAcc-std()-Z"			"fBodyAccJerk-std()-X"           
+[73] "fBodyAccJerk-std()-Y"		"fBodyAccJerk-std()-Z"           
+[75] "fBodyGyro-std()-X"		"fBodyGyro-std()-Y"              
+[77] "fBodyGyro-std()-Z"		"fBodyAccMag-std()"              
+[79] "fBodyBodyAccJerkMag-std()"	"fBodyBodyGyroMag-std()"         
 [81] "fBodyBodyGyroJerkMag-std()"
 
 # Part Five: Sources
